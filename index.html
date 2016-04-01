@@ -1,1 +1,49 @@
-<!--Add Your home page HTML here-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Angular & Angular routing -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
+
+    <!-- Boostrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- local files -->
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-app="routingApp" class="container-fluid">
+<div class="col-xs-12 col-md-offset-1 col-md-10">
+    <div class="row">
+    <header >
+        <ul>
+            <li class="col-xs-3 col-sm-offset-3 col-sm-2"><a href="#/main">WELCOME</a></li>
+            <li class="col-xs-3 col-sm-2"><a href="#/macarons">OUR MACARONS</a></li>
+            <li class="col-xs-3 col-sm-2"><a href="#/gifts_parties">GIFTS & PARTIES</a></li>
+            <li class="col-xs-3 col-sm-2"><a href="#/contact">CONTACT</a></li>
+        </ul>
+    </header>
+    </div>
+
+    <div ng-controller="routeCtrl">
+        <div ng-view>
+
+        </div>
+    </div>
+
+    <div class="row">
+    <footer >
+        <ul>
+            <li class="col-xs-12 col-md-offset-1 col-md-3"><img src="assets/images/mail.png">order@mboutique.com</li>
+            <li class="col-xs-12 col-md-offset-1 col-md-3"><img src="assets/images/phone.png">949.800-3111</li>
+            <li class="col-xs-12 col-md-offset-1 col-md-3">Follow Us <img src="assets/images/facebook.png"> <img src="assets/images/twitter.png"></li>
+        </ul>
+        <p class="col-xs-12">Copyright ©2015 MBoutique. All rights reserved.</p>
+    </footer>
+    </div>
+</div>
+</body>
+</html>

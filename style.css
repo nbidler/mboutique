@@ -1,1 +1,252 @@
-/* Add your CSS here */
+/* Overall */
+* {
+    margin: 0px;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+body + div {
+
+}
+
+/* head */
+header {
+    background-color: #fffabe;
+    background-image: url("assets/images/logo.png");
+    background-repeat: no-repeat;
+    background-position: 2% 50%;
+    height: 12vh;
+}
+
+header ul {
+    padding-top: 2%;
+    list-style: none;
+    font-size: 1.2em;
+}
+
+header ul a {
+    text-decoration: none;
+    color: #515151;
+}
+
+header ul a:hover{
+    color: #d42551;
+}
+
+/* body */
+
+article, section {
+    font-size: 1em;
+    color: #6a6969;
+}
+
+article {
+    background-repeat: no-repeat;
+}
+
+article.mainhtml {
+    background-image: url('assets/images/macarons-image.png');
+    background-position : 10% 50%;
+}
+
+article.macarons {
+    background-image: url('assets/images/our-macarons-background.png');
+    background-position : 90% 90%;
+}
+
+article.gifts {
+    background-image: url('assets/images/gifts-parties-background.png');
+    background-position : 90% 90%;
+}
+
+article.contact {
+    background-image: url('assets/images/macarons-image.png');
+    background-position : 90% 50%;
+}
+
+.menuContainer {
+    height: 50%;
+}
+
+.menu {
+    padding: 0%;
+    margin-left: 1.5%;
+    background-color: #fffabe;
+    width:12.5%;
+    height: 100%;
+}
+
+.menu > div {
+    background-repeat:no-repeat;
+    background-position: 90% 50%;
+    background-size: 20%;
+}
+
+.menu > * {
+    padding-left: 10%;
+    height: 2.5em;
+    padding-top: 0.5em;
+}
+
+.menu p:first-of-type {
+    padding-top: 1em;
+}
+
+form * {
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+    font-weight: bold;
+    color: #6a6969;
+    margin-top: 5%;
+    border-style: none;
+    width:90%;
+    padding: 1em;
+}
+
+/* menu */
+
+#chocolate {
+    background-image: url("assets/images/chocolate.png");
+}
+
+#coconut {
+    background-image: url("assets/images/coconut.png");
+    background-color: #824603;
+    color: white;
+}
+
+#violet-cassis {
+    background-image: url("assets/images/violet-cassis.png");
+}
+
+#green-tea {
+    background-image: url("assets/images/green-tea.png");
+}
+
+#passion-fruit {
+    background-image: url("assets/images/passion-fruit.png");
+}
+
+#vanilla {
+    background-image: url("assets/images/vanilla.png");
+    background-color: #df5277;
+    color: white;
+}
+
+#coffee {
+    background-image: url("assets/images/coffee.png");
+}
+
+#pistachio {
+    background-image: url("assets/images/pistachio.png");
+
+}
+
+#raspbery {
+    background-image: url("assets/images/raspbery.png");
+
+}
+
+#lemon {
+    background-image: url("assets/images/lemon.png");
+
+    background-color: #a2304e;
+    color: white;
+}
+
+#rose {
+    background-image: url("assets/images/rose.png");
+
+}
+
+#tiffany-blue {
+    background-image: url("assets/images/tiffany-blue.png");
+
+}
+
+#caramel {
+    background-image: url("assets/images/caramel.png");
+
+}
+
+#almond {
+    background-image: url("assets/images/almond.png");
+
+    background-color: #c39005;
+    color: white;
+}
+
+/* foot */
+footer {
+    margin-top: 0.5em;
+    background-color: #df5277;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    height: 12vh;
+}
+
+footer ul {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: left;
+    list-style: none;
+}
+
+footer ul img {
+    padding: 0 0.5em 0 0.5em;
+}
+
+/* mobile */
+@media screen and (max-width: 375px) {
+    body.container-fluid{
+        padding: 0;
+    }
+
+    header {
+        background-position: 50% 20%;
+        font-size: 0.6em;
+    }
+
+    header ul {
+        padding-top: 4em;
+        font-size: 1.4em;
+    }
+
+    header ul li.col-xs-3,
+    footer ul li.col-xs-12
+    {
+        padding: 0px;
+    }
+
+    article {
+        background-image:none;
+        font-size: 1em;
+    }
+
+    article.mainhtml, article.macarons, article.gifts, article.contact {
+        background-image: none;
+    }
+
+    .menu {
+        width:100%;
+        margin-left: 0;
+        font-size: 1.2em;
+    }
+
+    .menu > div {
+        background-size: 9%;
+    }
+
+    footer {
+        margin: 0;
+        height: 15vh;
+    }
+
+    footer ul {
+        text-align: center;
+    }
+}
